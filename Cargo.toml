@@ -1,0 +1,11 @@
+[package]
+name = "fuzzy-match"
+version = "0.1.0"
+authors = ["seven-two-eight <seven.two.eight@outlook.com@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+stdweb = "0.4"

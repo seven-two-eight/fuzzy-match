@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fuzzy Match</title>
+    <script src="fuzzy-match.js"></script>
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+    <div id="step_1" class="open_tab">
+        <textarea id="students"
+            placeholder="Paste student list here"></textarea>
+        <input type="button" id="done_btn" value="Done">
+    </div>
+    <div id="step_2" class="closed_tab">
+        <input type="text" id="input"
+            placeholder="[student name] = [scores seperated by space] | :export | :clear">
+        <textarea id="output" readonly></textarea>
+    </div>
+</body>
+</html>

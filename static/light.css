@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+.main_text_style, #students, #done_btn, #input, #output {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: #333;
+}
+.open_tab {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.closed_tab {
+    display: none;
+}
+#students {
+    flex: 1;
+    resize: none;
+    white-space: pre;
+    padding: 10px;
+}
+#students:focus {
+    outline: none;
+}
+#done_btn {
+    padding: 0;
+    margin: 3vh 0 0 0;
+    align-self: center;
+    background: none;
+    border: none;
+    font-size: large;
+}
+#done_btn:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#done_btn:active {
+    font-weight: normal;
+}
+#done_btn:focus {
+    outline: none;
+}
+#input {
+    margin: 0 0 2vh;
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-color: #333;
+    border-style: dashed;
+    padding: 5px 10px;
+}
+#input:focus {
+    outline: none;
+}
+#output {
+    flex: 1;
+    padding: 0 10px;
+    resize: none;
+    border: none;
+    white-space: pre;
+    overflow: hidden;
+}
+#output:focus {
+    outline: none;
+}
