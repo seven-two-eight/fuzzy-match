@@ -217,7 +217,7 @@ fn parse_input(s: &str) -> Result<Input, String> {
 fn init_marks_records(s: &str) -> MarksRecords {
     let mut marks_records = MarksRecords::new();
     for line in s.lines() {
-        marks_records.insert(line.replace('\t', " "), Vec::new());
+        marks_records.add_student(line.replace('\t', " "));
     }
     marks_records
 }
