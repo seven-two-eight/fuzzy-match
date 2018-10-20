@@ -38,11 +38,11 @@ impl MarksRecords {
     /// Update marks of the record at the top.
     pub fn set_marks_at_top(&mut self, marks: Marks) -> Result<(), String> {
         if let Some(record) = self.records.get_mut(0) {
-            record.2 = marks;
             if record.0 == NULL_RECORD_ID {
                 record.0 = self.next_record_id;
                 self.next_record_id += 1;
             }
+            record.2 = marks;
         } else {
             return Err(String::from("no student record"));
         }
